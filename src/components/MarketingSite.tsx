@@ -26,10 +26,6 @@ declare global {
   }
 }
 
-const hideOnError = (e: React.SyntheticEvent<HTMLImageElement>) => {
-  e.currentTarget.style.display = "none";
-};
-
 export default function MarketingSite() {
   const inited = useRef(false);
 
@@ -45,12 +41,7 @@ export default function MarketingSite() {
       <div className="cursor-ring" id="cursor-ring"></div>
 
       <nav id="navbar">
-        <a href="#" className="nav-logo">
-          <img
-            src="IMG_0896.png"
-            alt="The Business Architects"
-            onError={hideOnError}
-          />
+        <a href="#home" className="nav-logo">
           <div className="nav-logo-text">
             The Business
             <br />
@@ -60,9 +51,6 @@ export default function MarketingSite() {
         <ul className="nav-links">
           <li>
             <a href="#consult">Our Services</a>
-          </li>
-          <li>
-            <a href="#framework">Framework</a>
           </li>
           <li>
             <a
@@ -468,8 +456,10 @@ export default function MarketingSite() {
                     that create compounding returns — not one-off spikes.
                   </p>
                 </div>
-                <div className="equity-service"></div>
                 <div className="equity-service">
+                  <h4>
+                    Brand Building &amp; Growth <span>→</span>
+                  </h4>
                   <p>
                     Our founder has been part of multiple brands — creating,
                     monetising and scaling them, as well as setting up remote
@@ -478,7 +468,6 @@ export default function MarketingSite() {
                     turn spend into revenue.
                   </p>
                 </div>
-                <div className="equity-service"></div>
               </div>
             </div>
           </div>
@@ -664,11 +653,6 @@ export default function MarketingSite() {
       <footer>
         <div className="footer-inner">
           <div className="footer-logo">
-            <img
-              src="IMG_0896.png"
-              alt="The Business Architects"
-              onError={hideOnError}
-            />
             <span
               style={{
                 fontFamily: "'Cormorant Garamond',serif",
@@ -684,17 +668,6 @@ export default function MarketingSite() {
             <a href="#framework">Framework</a>
             <a href="#contact">Contact</a>
           </nav>
-          <div className="footer-social">
-            <a href="#" className="social-btn" id="social-linkedin">
-              in
-            </a>
-            <a href="#" className="social-btn" id="social-instagram">
-              ig
-            </a>
-            <a href="#" className="social-btn" id="social-twitter">
-              𝕏
-            </a>
-          </div>
           <div className="footer-copy">
             © 2025 The Business Architects. All rights reserved. | Registered in
             England &amp; Wales |{" "}
