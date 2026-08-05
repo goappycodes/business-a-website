@@ -1978,7 +1978,7 @@ footer {
 
 .footer-logo img { height: 36px; }
 
-.footer-nav { display: flex; gap: 32px; }
+.footer-nav { display: flex; gap: 32px; position: static; padding: 0; justify-content: flex-start; z-index: auto; }
 
 .footer-nav a { color: rgba(255,255,255,0.45); font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: color 0.3s; }
 
